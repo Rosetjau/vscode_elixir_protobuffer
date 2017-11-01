@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package fiz;
+
+message Baz {
+    bool c = 1;
+}
+
+message Foo {
+    int32 a = 1;
+    map<int32, Baz> b = 2;
+}
